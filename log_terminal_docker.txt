@@ -1,0 +1,486 @@
+
++-+-+-Task0-+-+-+
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2# cd task0
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2/task0# docker build -f ./Dockerfile -t softy-pinko:task0 .
+[+] Building 1.2s (7/7) FINISHED                                                                                                                                                                                                               docker:default
+ => [internal] load build definition from Dockerfile                                                                                                                                                                                                     0.0s
+ => => transferring dockerfile: 254B                                                                                                                                                                                                                     0.0s 
+ => [internal] load metadata for docker.io/library/ubuntu:latest                                                                                                                                                                                         1.0s 
+ => [auth] library/ubuntu:pull token for registry-1.docker.io                                                                                                                                                                                            0.0s
+ => [internal] load .dockerignore                                                                                                                                                                                                                        0.0s
+ => => transferring context: 2B                                                                                                                                                                                                                          0.0s 
+ => [1/2] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61b78c2678c02cbdae5f0fea92cc6734ab                                                                                                                                   0.0s 
+ => => resolve docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61b78c2678c02cbdae5f0fea92cc6734ab                                                                                                                                   0.0s 
+ => CACHED [2/2] RUN apt-get update && apt-get upgrade -y                                                                                                                                                                                                0.0s 
+ => exporting to image                                                                                                                                                                                                                                   0.1s 
+ => => exporting layers                                                                                                                                                                                                                                  0.0s 
+ => => exporting manifest sha256:d1e465ffb116f21e3fe3e795dad187e7cc031177795060ab912bc702a5f282c0                                                                                                                                                        0.0s 
+ => => exporting config sha256:101dd9f5571e1c176e55e68f308fb4265318fd65d465dc5ae565bc573acc02ec                                                                                                                                                          0.0s 
+ => => exporting attestation manifest sha256:9c7b0b874bbcbec615650622d9cb001ae2b5f41e4b503b9234fd6b587d57526f                                                                                                                                            0.0s 
+ => => exporting manifest list sha256:4d22b737ebdcff4645bbe76c5275c9f45063a79e6ca968ab76ab7252c344b2c6                                                                                                                                                   0.0s 
+ => => naming to docker.io/library/softy-pinko:task0                                                                                                                                                                                                     0.0s 
+ => => unpacking to docker.io/library/softy-pinko:task0                                                                                                                                                                                                  0.0s 
+
+ 1 warning found (use docker --debug to expand):
+ - JSONArgsRecommended: JSON arguments recommended for CMD to prevent unintended behavior related to OS signals (line 8)
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2/task0# docker build -f ./Dockerfile -t softy-pinko:task0 .
+[+] Building 1.0s (6/6) FINISHED                                                                                                                                                                                                               docker:default
+ => [internal] load build definition from Dockerfile                                                                                                                                                                                                     0.0s
+ => => transferring dockerfile: 254B                                                                                                                                                                                                                     0.0s 
+ => [internal] load metadata for docker.io/library/ubuntu:latest                                                                                                                                                                                         0.5s 
+ => [internal] load .dockerignore                                                                                                                                                                                                                        0.0s
+ => => transferring context: 2B                                                                                                                                                                                                                          0.0s 
+ => [1/2] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61b78c2678c02cbdae5f0fea92cc6734ab                                                                                                                                   0.0s 
+ => => resolve docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61b78c2678c02cbdae5f0fea92cc6734ab                                                                                                                                   0.0s 
+ => CACHED [2/2] RUN apt-get update && apt-get upgrade -y                                                                                                                                                                                                0.0s 
+ => exporting to image                                                                                                                                                                                                                                   0.4s 
+ => => exporting layers                                                                                                                                                                                                                                  0.0s 
+ => => exporting manifest sha256:d1e465ffb116f21e3fe3e795dad187e7cc031177795060ab912bc702a5f282c0                                                                                                                                                        0.0s 
+ => => exporting config sha256:101dd9f5571e1c176e55e68f308fb4265318fd65d465dc5ae565bc573acc02ec                                                                                                                                                          0.0s 
+ => => exporting attestation manifest sha256:2598237d8c576ffedbec7616e3060356c8cc565efd91521325e844402edfb6cc                                                                                                                                            0.0s 
+ => => exporting manifest list sha256:094eacfcc6e8bf955d0f65b4b57fe1c1f0215c314f628295e5deeef5358e78cc                                                                                                                                                   0.0s 
+ => => naming to docker.io/library/softy-pinko:task0                                                                                                                                                                                                     0.0s 
+ => => unpacking to docker.io/library/softy-pinko:task0                                                                                                                                                                                                  0.3s
+
+ 1 warning found (use docker --debug to expand):
+ - JSONArgsRecommended: JSON arguments recommended for CMD to prevent unintended behavior related to OS signals (line 8)
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2/task0# docker run -it --rm --name softy-pinko-task0 softy-pinko:task0
+Hello, World!
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2/task0# cd ..
+
++-+-+-Task1-+-+-+
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2# cd task1
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2/task1# docker build -f ./Dockerfile -t softy-pinko:task1 .
+[+] Building 8.1s (13/13) FINISHED                                                                                                                                                                                                             docker:default
+ => [internal] load build definition from Dockerfile                                                                                                                                                                                                     0.0s
+ => => transferring dockerfile: 647B                                                                                                                                                                                                                     0.0s 
+ => [internal] load metadata for docker.io/library/ubuntu:latest                                                                                                                                                                                         2.0s 
+ => [auth] library/ubuntu:pull token for registry-1.docker.io                                                                                                                                                                                            0.0s
+ => [internal] load .dockerignore                                                                                                                                                                                                                        0.0s
+ => => transferring context: 2B                                                                                                                                                                                                                          0.0s 
+ => [1/7] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61b78c2678c02cbdae5f0fea92cc6734ab                                                                                                                                   0.0s 
+ => => resolve docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61b78c2678c02cbdae5f0fea92cc6734ab                                                                                                                                   0.0s 
+ => [internal] load build context                                                                                                                                                                                                                        0.0s 
+ => => transferring context: 28B                                                                                                                                                                                                                         0.0s 
+ => CACHED [2/7] RUN apt-get update && apt-get upgrade -y                                                                                                                                                                                                0.0s 
+ => CACHED [3/7] RUN apt-get install -y python3 python3-pip                                                                                                                                                                                              0.0s 
+ => CACHED [4/7] RUN rm /usr/lib/python*/EXTERNALLY-MANAGED || true                                                                                                                                                                                      0.0s 
+ => CACHED [5/7] RUN pip3 install flask                                                                                                                                                                                                                  0.0s 
+ => CACHED [6/7] WORKDIR /app                                                                                                                                                                                                                            0.0s 
+ => CACHED [7/7] COPY ./api.py /app/api.py                                                                                                                                                                                                               0.0s 
+ => exporting to image                                                                                                                                                                                                                                   5.7s 
+ => => exporting layers                                                                                                                                                                                                                                  0.0s 
+ => => exporting manifest sha256:c308ef516f0fbe73ebde851839c1c35bb2285c1c9c0c404470494c2f04180c31                                                                                                                                                        0.0s 
+ => => exporting config sha256:115fcce4b94ab1de61ae5f91a9e0117d8fc6004cc6925b8d8e6c8579f8c5ba4b                                                                                                                                                          0.0s 
+ => => exporting attestation manifest sha256:4d30886d23d9a7d9f22db94e904549979aee7d4ade3fb68b8b1c366fd9ae59ca                                                                                                                                            0.0s 
+ => => exporting manifest list sha256:99ea96932d5dcc25d5fc0c0ab598621f7c53ef6f98f762c5684ab504737c0d0b                                                                                                                                                   0.0s 
+ => => naming to docker.io/library/softy-pinko:task1                                                                                                                                                                                                     0.0s
+ => => unpacking to docker.io/library/softy-pinko:task1                                                                                                                                                                                                  5.6s 
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2/task1# docker run -p 5252:5252 -it --rm --name softy-pinko-task1 softy-pinko:task1
+ * Serving Flask app 'api'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5252
+ * Running on http://172.17.0.2:5252
+Press CTRL+C to quit
+172.17.0.1 - - [17/Dec/2024 10:02:12] "GET / HTTP/1.1" 404 -
+172.17.0.1 - - [17/Dec/2024 10:02:26] "GET /api/hello HTTP/1.1" 200 -
+^Croot@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2/task1# cd ..
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2# ls
+README.md  task0  task1  task2  task3  task4  task5  task6
+
++-+-+-Task2-+-+-+
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2# cd task2
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2/task2# ls
+back-end  front-end
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2/task2# docker build -f ./front-end/Dockerfile -t softy-pinko-front-end:task2 ./front-end
+[+] Building 2.1s (9/9) FINISHED                                                                                                                                                                                                               docker:default
+ => [internal] load build definition from Dockerfile                                                                                                                                                                                                     0.0s
+ => => transferring dockerfile: 339B                                                                                                                                                                                                                     0.0s 
+ => [internal] load metadata for docker.io/library/nginx:latest                                                                                                                                                                                          1.0s 
+ => [auth] library/nginx:pull token for registry-1.docker.io                                                                                                                                                                                             0.0s
+ => [internal] load .dockerignore                                                                                                                                                                                                                        0.0s
+ => => transferring context: 2B                                                                                                                                                                                                                          0.0s 
+ => CACHED [1/3] FROM docker.io/library/nginx:latest@sha256:fb197595ebe76b9c0c14ab68159fd3c08bd067ec62300583543f0ebda353b5be                                                                                                                             0.0s 
+ => => resolve docker.io/library/nginx:latest@sha256:fb197595ebe76b9c0c14ab68159fd3c08bd067ec62300583543f0ebda353b5be                                                                                                                                    0.0s 
+ => [internal] load build context                                                                                                                                                                                                                        0.5s 
+ => => transferring context: 41.50kB                                                                                                                                                                                                                     0.4s 
+ => [2/3] COPY ./softy-pinko-front-end /var/www/html/softy-pinko-front-end                                                                                                                                                                               0.1s
+ => [3/3] COPY ./softy-pinko-front-end.conf /etc/nginx/conf.d/default.conf                                                                                                                                                                               0.0s
+ => exporting to image                                                                                                                                                                                                                                   0.4s 
+ => => exporting layers                                                                                                                                                                                                                                  0.2s 
+ => => exporting manifest sha256:241fad3d38d7370aee29460855e313569462be995ab1912f2c4fda8c27aa674c                                                                                                                                                        0.0s
+ => => exporting config sha256:5ff08a897b40167248dbabe5a2f74f594574737c05184e4448f99a4446c9509c                                                                                                                                                          0.0s 
+ => => exporting attestation manifest sha256:f1b0f088dd1d3ea42abdf9c3a84dc9fd6c7c05f93a5b17510ff3977766179410                                                                                                                                            0.0s 
+ => => exporting manifest list sha256:05d6d4457c3e98d18963998c9fe87e85c29e3cc87e54f0d932da6f5b954788a7                                                                                                                                                   0.0s 
+ => => naming to docker.io/library/softy-pinko-front-end:task2                                                                                                                                                                                           0.0s 
+ => => unpacking to docker.io/library/softy-pinko-front-end:task2                                                                                                                                                                                        0.1s 
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2/task2# docker run -p 9000:9000 -it --rm --name softy-pinko-front-end-task2 softy-pinko-front-end:task2
+/docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+/docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+10-listen-on-ipv6-by-default.sh: info: /etc/nginx/conf.d/default.conf differs from the packaged version
+/docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+/docker-entrypoint.sh: Configuration complete; ready for start up
+2024/12/17 10:04:18 [notice] 1#1: using the "epoll" event method
+2024/12/17 10:04:18 [notice] 1#1: nginx/1.27.3
+2024/12/17 10:04:18 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14)
+2024/12/17 10:04:18 [notice] 1#1: OS: Linux 5.15.167.4-microsoft-standard-WSL2
+2024/12/17 10:04:18 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/12/17 10:04:18 [notice] 1#1: start worker processes
+2024/12/17 10:04:18 [notice] 1#1: start worker process 28
+2024/12/17 10:04:18 [notice] 1#1: start worker process 29
+2024/12/17 10:04:18 [notice] 1#1: start worker process 30
+2024/12/17 10:04:18 [notice] 1#1: start worker process 31
+2024/12/17 10:04:18 [notice] 1#1: start worker process 32
+2024/12/17 10:04:18 [notice] 1#1: start worker process 33
+2024/12/17 10:04:18 [notice] 1#1: start worker process 34
+2024/12/17 10:04:18 [notice] 1#1: start worker process 35
+^C2024/12/17 10:49:33 [notice] 34#34: signal 2 (SIGINT) received, exiting
+2024/12/17 10:49:33 [notice] 33#33: signal 2 (SIGINT) received, exiting
+2024/12/17 10:49:33 [notice] 34#34: exiting
+2024/12/17 10:49:33 [notice] 35#35: signal 2 (SIGINT) received, exiting
+2024/12/17 10:49:33 [notice] 33#33: exiting
+2024/12/17 10:49:33 [notice] 35#35: exiting
+2024/12/17 10:49:33 [notice] 31#31: signal 2 (SIGINT) received, exiting
+2024/12/17 10:49:33 [notice] 34#34: exit
+2024/12/17 10:49:33 [notice] 33#33: exit
+2024/12/17 10:49:33 [notice] 31#31: exiting
+2024/12/17 10:49:33 [notice] 35#35: exit
+2024/12/17 10:49:33 [notice] 31#31: exit
+2024/12/17 10:49:33 [notice] 30#30: signal 2 (SIGINT) received, exiting
+2024/12/17 10:49:33 [notice] 32#32: signal 2 (SIGINT) received, exiting
+2024/12/17 10:49:33 [notice] 30#30: exiting
+2024/12/17 10:49:33 [notice] 28#28: signal 2 (SIGINT) received, exiting
+2024/12/17 10:49:33 [notice] 32#32: exiting
+2024/12/17 10:49:33 [notice] 28#28: exiting
+2024/12/17 10:49:33 [notice] 1#1: signal 2 (SIGINT) received, exiting
+2024/12/17 10:49:33 [notice] 29#29: signal 2 (SIGINT) received, exiting
+2024/12/17 10:49:33 [notice] 30#30: exit
+2024/12/17 10:49:33 [notice] 29#29: exiting
+2024/12/17 10:49:33 [notice] 28#28: exit
+2024/12/17 10:49:33 [notice] 32#32: exit
+2024/12/17 10:49:33 [notice] 29#29: exit
+2024/12/17 10:49:33 [notice] 1#1: signal 14 (SIGALRM) received
+2024/12/17 10:49:33 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2024/12/17 10:49:33 [notice] 1#1: worker process 29 exited with code 0
+2024/12/17 10:49:33 [notice] 1#1: worker process 34 exited with code 0
+2024/12/17 10:49:33 [notice] 1#1: signal 29 (SIGIO) received
+2024/12/17 10:49:33 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2024/12/17 10:49:33 [notice] 1#1: worker process 35 exited with code 0
+2024/12/17 10:49:33 [notice] 1#1: signal 29 (SIGIO) received
+2024/12/17 10:49:33 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2024/12/17 10:49:33 [notice] 1#1: worker process 31 exited with code 0
+2024/12/17 10:49:33 [notice] 1#1: signal 29 (SIGIO) received
+2024/12/17 10:49:33 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2024/12/17 10:49:33 [notice] 1#1: worker process 30 exited with code 0
+2024/12/17 10:49:33 [notice] 1#1: signal 29 (SIGIO) received
+2024/12/17 10:49:33 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2024/12/17 10:49:33 [notice] 1#1: worker process 28 exited with code 0
+2024/12/17 10:49:33 [notice] 1#1: signal 29 (SIGIO) received
+2024/12/17 10:49:34 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2024/12/17 10:49:34 [notice] 1#1: worker process 32 exited with code 0
+2024/12/17 10:49:34 [notice] 1#1: signal 29 (SIGIO) received
+2024/12/17 10:49:34 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2024/12/17 10:49:34 [notice] 1#1: worker process 33 exited with code 0
+2024/12/17 10:49:34 [notice] 1#1: exit
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2/task2# cd ..
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2# cd task3
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2/task3# ls
+back-end  front-end
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2/task3# cd ..
+
++-+-+-Task2-+-+-+
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2# cd task2
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2/task2# docker run -p 9000:9000 -it --rm --name softy-pinko-front-end-task2 softy-pinko-front-end:task2
+/docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+/docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+10-listen-on-ipv6-by-default.sh: info: /etc/nginx/conf.d/default.conf differs from the packaged version
+/docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+/docker-entrypoint.sh: Configuration complete; ready for start up
+2024/12/17 12:04:52 [notice] 1#1: using the "epoll" event method
+2024/12/17 12:04:52 [notice] 1#1: nginx/1.27.3
+2024/12/17 12:04:52 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14)
+2024/12/17 12:04:52 [notice] 1#1: OS: Linux 5.15.167.4-microsoft-standard-WSL2
+2024/12/17 12:04:52 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/12/17 12:04:52 [notice] 1#1: start worker processes
+2024/12/17 12:04:52 [notice] 1#1: start worker process 28
+2024/12/17 12:04:52 [notice] 1#1: start worker process 29
+2024/12/17 12:04:52 [notice] 1#1: start worker process 30
+2024/12/17 12:04:52 [notice] 1#1: start worker process 31
+2024/12/17 12:04:52 [notice] 1#1: start worker process 32
+2024/12/17 12:04:52 [notice] 1#1: start worker process 33
+2024/12/17 12:04:52 [notice] 1#1: start worker process 34
+2024/12/17 12:04:52 [notice] 1#1: start worker process 35
+172.17.0.1 - - [17/Dec/2024:12:05:07 +0000] "GET / HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" "-"
+172.17.0.1 - - [17/Dec/2024:12:05:07 +0000] "GET /assets/css/bootstrap.min.css HTTP/1.1" 304 0 "http://localhost:9000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" "-"
+172.17.0.1 - - [17/Dec/2024:12:05:07 +0000] "GET /assets/css/templatemo-softy-pinko.css HTTP/1.1" 304 0 "http://localhost:9000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" "-"
+172.17.0.1 - - [17/Dec/2024:12:05:07 +0000] "GET /assets/css/font-awesome.css HTTP/1.1" 304 0 "http://localhost:9000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" "-"
+172.17.0.1 - - [17/Dec/2024:12:05:07 +0000] "GET /assets/images/featured-item-01.png HTTP/1.1" 304 0 "http://localhost:9000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" "-"
+172.17.0.1 - - [17/Dec/2024:12:05:07 +0000] "GET /assets/images/logo.png HTTP/1.1" 304 0 "http://localhost:9000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" "-"
+172.17.0.1 - - [17/Dec/2024:12:05:07 +0000] "GET /assets/images/left-image.png HTTP/1.1" 304 0 "http://localhost:9000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" "-"
+172.17.0.1 - - [17/Dec/2024:12:05:07 +0000] "GET /assets/images/testimonial-icon.png HTTP/1.1" 304 0 "http://localhost:9000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" "-"
+172.17.0.1 - - [17/Dec/2024:12:05:07 +0000] "GET /assets/images/right-image.png HTTP/1.1" 304 0 "http://localhost:9000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" "-"
+172.17.0.1 - - [17/Dec/2024:12:05:07 +0000] "GET /assets/images/work-process-item-01.png HTTP/1.1" 304 0 "http://localhost:9000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" "-"
+172.17.0.1 - - [17/Dec/2024:12:05:07 +0000] "GET /assets/images/blog-item-01.png HTTP/1.1" 304 0 "http://localhost:9000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" "-"
+172.17.0.1 - - [17/Dec/2024:12:05:07 +0000] "GET /assets/js/scrollreveal.min.js HTTP/1.1" 200 4572 "http://localhost:9000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" "-"
+172.17.0.1 - - [17/Dec/2024:12:05:07 +0000] "GET /assets/images/blog-item-02.png HTTP/1.1" 304 0 "http://localhost:9000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" "-"
+172.17.0.1 - - [17/Dec/2024:12:05:07 +0000] "GET /assets/js/bootstrap.min.js HTTP/1.1" 200 58078 "http://localhost:9000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" "-"
+172.17.0.1 - - [17/Dec/2024:12:05:07 +0000] "GET /assets/js/waypoints.min.js HTTP/1.1" 200 8051 "http://localhost:9000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" "-"
+172.17.0.1 - - [17/Dec/2024:12:05:07 +0000] "GET /assets/js/popper.js HTTP/1.1" 200 83672 "http://localhost:9000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" "-"
+172.17.0.1 - - [17/Dec/2024:12:05:07 +0000] "GET /assets/js/jquery-2.1.0.min.js HTTP/1.1" 200 83617 "http://localhost:9000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" "-"
+172.17.0.1 - - [17/Dec/2024:12:05:07 +0000] "GET /assets/js/imgfix.min.js HTTP/1.1" 200 19796 "http://localhost:9000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" "-"
+172.17.0.1 - - [17/Dec/2024:12:05:07 +0000] "GET /assets/js/jquery.counterup.min.js HTTP/1.1" 200 1074 "http://localhost:9000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" "-"
+172.17.0.1 - - [17/Dec/2024:12:05:07 +0000] "GET /assets/js/custom.js HTTP/1.1" 200 3293 "http://localhost:9000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" "-"
+172.17.0.1 - - [17/Dec/2024:12:05:07 +0000] "GET /assets/images/blog-item-03.png HTTP/1.1" 304 0 "http://localhost:9000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" "-"
+172.17.0.1 - - [17/Dec/2024:12:05:07 +0000] "GET /assets/images/fun-facts-bg.png HTTP/1.1" 200 239628 "http://localhost:9000/assets/css/templatemo-softy-pinko.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" "-"
+172.17.0.1 - - [17/Dec/2024:12:05:07 +0000] "GET /assets/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 56780 "http://localhost:9000/assets/css/font-awesome.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" "-"
+172.17.0.1 - - [17/Dec/2024:12:05:07 +0000] "GET /assets/images/work-process-bg.png HTTP/1.1" 304 0 "http://localhost:9000/assets/css/templatemo-softy-pinko.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" "-"
+172.17.0.1 - - [17/Dec/2024:12:05:07 +0000] "GET /assets/images/banner-bg.png HTTP/1.1" 304 0 "http://localhost:9000/assets/css/templatemo-softy-pinko.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" "-"
+2024/12/17 12:05:07 [error] 28#28: *6 open() "/var/www/html/softy-pinko-front-end/favicon.ico" failed (2: No such file or directory), client: 172.17.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:9000", referrer: "http://localhost:9000/"
+172.17.0.1 - - [17/Dec/2024:12:05:07 +0000] "GET /favicon.ico HTTP/1.1" 404 153 "http://localhost:9000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" "-"
+^C
+2024/12/17 12:06:40 [notice] 33#33: signal 2 (SIGINT) received, exiting
+2024/12/17 12:06:40 [notice] 1#1: signal 2 (SIGINT) received, exiting
+2024/12/17 12:06:40 [notice] 34#34: signal 2 (SIGINT) received, exiting
+2024/12/17 12:06:40 [notice] 33#33: exiting
+2024/12/17 12:06:40 [notice] 28#28: signal 2 (SIGINT) received, exiting
+2024/12/17 12:06:40 [notice] 35#35: signal 2 (SIGINT) received, exiting
+2024/12/17 12:06:40 [notice] 34#34: exiting
+2024/12/17 12:06:40 [notice] 28#28: exiting
+2024/12/17 12:06:40 [notice] 35#35: exiting
+2024/12/17 12:06:40 [notice] 34#34: exit
+2024/12/17 12:06:40 [notice] 28#28: exit
+2024/12/17 12:06:40 [notice] 30#30: signal 2 (SIGINT) received, exiting
+2024/12/17 12:06:40 [notice] 30#30: exiting
+2024/12/17 12:06:40 [notice] 30#30: exit
+2024/12/17 12:06:40 [notice] 32#32: signal 2 (SIGINT) received, exiting
+2024/12/17 12:06:40 [notice] 31#31: signal 2 (SIGINT) received, exiting
+2024/12/17 12:06:40 [notice] 32#32: exiting
+2024/12/17 12:06:40 [notice] 31#31: exiting
+2024/12/17 12:06:40 [notice] 29#29: signal 2 (SIGINT) received, exiting
+2024/12/17 12:06:40 [notice] 29#29: exiting
+2024/12/17 12:06:40 [notice] 32#32: exit
+2024/12/17 12:06:40 [notice] 31#31: exit
+2024/12/17 12:06:40 [notice] 29#29: exit
+2024/12/17 12:06:40 [notice] 33#33: exit
+2024/12/17 12:06:40 [notice] 35#35: exit
+2024/12/17 12:06:40 [notice] 1#1: signal 14 (SIGALRM) received
+2024/12/17 12:06:40 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2024/12/17 12:06:40 [notice] 1#1: worker process 29 exited with code 0
+2024/12/17 12:06:40 [notice] 1#1: worker process 30 exited with code 0
+2024/12/17 12:06:40 [notice] 1#1: worker process 31 exited with code 0
+2024/12/17 12:06:40 [notice] 1#1: worker process 35 exited with code 0
+2024/12/17 12:06:40 [notice] 1#1: signal 29 (SIGIO) received
+2024/12/17 12:06:40 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2024/12/17 12:06:40 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2024/12/17 12:06:40 [notice] 1#1: worker process 32 exited with code 0
+2024/12/17 12:06:40 [notice] 1#1: worker process 33 exited with code 0
+2024/12/17 12:06:40 [notice] 1#1: signal 29 (SIGIO) received
+2024/12/17 12:06:40 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2024/12/17 12:06:40 [notice] 1#1: worker process 28 exited with code 0
+2024/12/17 12:06:40 [notice] 1#1: signal 29 (SIGIO) received
+2024/12/17 12:06:40 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2024/12/17 12:06:40 [notice] 1#1: worker process 34 exited with code 0
+2024/12/17 12:06:40 [notice] 1#1: exit
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2/task2# cd ..
+
++-+-+-Task3-+-+-+
+******first terminale******
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2# cd task3
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2/task3# docker build -f ./back-end/Dockerfile -t softy-pinko-back-end:task3 ./back-end
+[+] Building 5.0s (12/12) FINISHED                                                                                                                                                                                                             docker:default
+ => [internal] load build definition from Dockerfile                                                                                                                                                                                                     0.0s
+ => => transferring dockerfile: 1.44kB                                                                                                                                                                                                                   0.0s
+ => [internal] load metadata for docker.io/library/ubuntu:latest                                                                                                                                                                                         1.3s
+ => [auth] library/ubuntu:pull token for registry-1.docker.io                                                                                                                                                                                            0.0s
+ => [internal] load .dockerignore                                                                                                                                                                                                                        0.0s
+ => => transferring context: 2B                                                                                                                                                                                                                          0.0s 
+ => [internal] load build context                                                                                                                                                                                                                        0.0s 
+ => => transferring context: 28B                                                                                                                                                                                                                         0.0s 
+ => [1/6] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61b78c2678c02cbdae5f0fea92cc6734ab                                                                                                                                   0.0s 
+ => => resolve docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61b78c2678c02cbdae5f0fea92cc6734ab                                                                                                                                   0.0s 
+ => CACHED [2/6] RUN apt-get update && apt-get upgrade -y     && apt-get install -y python3 python3-pip     && rm -rf /var/lib/apt/lists/*                                                                                                               0.0s 
+ => CACHED [3/6] RUN rm -f /usr/lib/python*/EXTERNALLY-MANAGED || true                                                                                                                                                                                   0.0s 
+ => CACHED [4/6] RUN pip3 install --no-cache-dir flask flask-cors                                                                                                                                                                                        0.0s 
+ => CACHED [5/6] WORKDIR /app                                                                                                                                                                                                                            0.0s 
+ => CACHED [6/6] COPY ./api.py /app/api.py                                                                                                                                                                                                               0.0s 
+ => exporting to image                                                                                                                                                                                                                                   3.4s 
+ => => exporting layers                                                                                                                                                                                                                                  0.0s 
+ => => exporting manifest sha256:6cc39073fdd88b46d6e2ceac2a3c20c7d3b6197e03c31f7f02b6eaa821ab6084                                                                                                                                                        0.0s 
+ => => exporting config sha256:2d58bfff99e41cc695391f253b3ae0efcf1558402d858bb39e5338146b3b090d                                                                                                                                                          0.0s 
+ => => exporting attestation manifest sha256:05202021b2ca383b165098fe67095b388d1eb8a8a831f62596e4e41e8f3b2151                                                                                                                                            0.0s 
+ => => exporting manifest list sha256:3f758bdbc9f3a144b12d11ebdb80396c5a03e4bec8a51eeeebf07d1b1df260b8                                                                                                                                                   0.0s 
+ => => naming to docker.io/library/softy-pinko-back-end:task3                                                                                                                                                                                            0.0s
+ => => unpacking to docker.io/library/softy-pinko-back-end:task3                                                                                                                                                                                         3.4s 
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2/task3# docker run -p 5252:5252 -it --rm --name softy-pinko-back-end-task3 softy-pinko-back-end:task3
+ * Serving Flask app 'api'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5252
+ * Running on http://172.17.0.2:5252
+Press CTRL+C to quit
+172.17.0.1 - - [17/Dec/2024 12:27:39] "GET / HTTP/1.1" 404 -
+172.17.0.1 - - [17/Dec/2024 12:27:39] "GET /favicon.ico HTTP/1.1" 404 -
+172.17.0.1 - - [17/Dec/2024 12:28:07] "GET /api/hello HTTP/1.1" 200 -
+------
+***********second terminal********
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2# cd task3
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2/task3# docker build -f ./front-end/Dockerfile -t softy-pinko-front-end:task3 ./front-end
+[+] Building 2.6s (9/9) FINISHED                                                                                                                                                                                                               docker:default
+ => [internal] load build definition from Dockerfile                                                                                                                                                                                                     0.0s
+ => => transferring dockerfile: 339B                                                                                                                                                                                                                     0.0s 
+ => [internal] load metadata for docker.io/library/nginx:latest                                                                                                                                                                                          1.0s 
+ => [auth] library/nginx:pull token for registry-1.docker.io                                                                                                                                                                                             0.0s
+ => [internal] load .dockerignore                                                                                                                                                                                                                        0.0s
+ => => transferring context: 2B                                                                                                                                                                                                                          0.0s 
+ => CACHED [1/3] FROM docker.io/library/nginx:latest@sha256:fb197595ebe76b9c0c14ab68159fd3c08bd067ec62300583543f0ebda353b5be                                                                                                                             0.0s 
+ => => resolve docker.io/library/nginx:latest@sha256:fb197595ebe76b9c0c14ab68159fd3c08bd067ec62300583543f0ebda353b5be                                                                                                                                    0.0s 
+ => [internal] load build context                                                                                                                                                                                                                        0.6s 
+ => => transferring context: 65.47kB                                                                                                                                                                                                                     0.6s 
+ => [2/3] COPY ./softy-pinko-front-end /var/www/html/softy-pinko-front-end                                                                                                                                                                               0.1s
+ => [3/3] COPY ./softy-pinko-front-end.conf /etc/nginx/conf.d/default.conf                                                                                                                                                                               0.1s
+ => exporting to image                                                                                                                                                                                                                                   0.6s 
+ => => exporting layers                                                                                                                                                                                                                                  0.5s 
+ => => exporting manifest sha256:461677f73b9baa1b39bda83f0a7c528b2bf960c9b2940dcaa0b3ae9d7e72728f                                                                                                                                                        0.0s
+ => => exporting config sha256:5b6ce3c5a4fe739b64c344bb4fba38de6163895ddf4e638c04880345b66e3711                                                                                                                                                          0.0s 
+ => => exporting attestation manifest sha256:77a3c710e8b39c2fc9510975258c89ce8a0a35eea178e8f55c2efa7518a8996e                                                                                                                                            0.0s 
+ => => exporting manifest list sha256:a1f430937473f58ceafd8c5f4c1dff2746c9aa2985a04c1631c59815ec881246                                                                                                                                                   0.0s 
+ => => naming to docker.io/library/softy-pinko-front-end:task3                                                                                                                                                                                           0.0s 
+ => => unpacking to docker.io/library/softy-pinko-front-end:task3                                                                                                                                                                                        0.1s 
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2/task3# docker run -p 9000:9000 -it --rm --name softy-pinko-front-end-task3 softy-pinko-front-end:task3
+/docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+/docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+10-listen-on-ipv6-by-default.sh: info: /etc/nginx/conf.d/default.conf differs from the packaged version
+/docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+/docker-entrypoint.sh: Configuration complete; ready for start up
+2024/12/17 12:27:17 [notice] 1#1: using the "epoll" event method
+2024/12/17 12:27:17 [notice] 1#1: nginx/1.27.3
+2024/12/17 12:27:17 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14)
+2024/12/17 12:27:17 [notice] 1#1: OS: Linux 5.15.167.4-microsoft-standard-WSL2
+2024/12/17 12:27:17 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/12/17 12:27:17 [notice] 1#1: start worker processes
+2024/12/17 12:27:17 [notice] 1#1: start worker process 28
+2024/12/17 12:27:17 [notice] 1#1: start worker process 29
+2024/12/17 12:27:17 [notice] 1#1: start worker process 30
+2024/12/17 12:27:17 [notice] 1#1: start worker process 31
+2024/12/17 12:27:17 [notice] 1#1: start worker process 32
+2024/12/17 12:27:17 [notice] 1#1: start worker process 33
+2024/12/17 12:27:17 [notice] 1#1: start worker process 34
+2024/12/17 12:27:17 [notice] 1#1: start worker process 35
+172.17.0.1 - - [17/Dec/2024:12:27:31 +0000] "GET / HTTP/1.1" 200 32039 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" "-"
+----
+
++-+-+-+-Task4-+-+-+-+
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2/task3# cd ..
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2# cd task4
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2/task4# docker-compose build
+WARN[0000] /mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2/task4/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion 
+[+] Building 3.4s (23/23) FINISHED                                                                                                                                                                                                             docker:default
+ => [back-end internal] load build definition from Dockerfile                                                                                                                                                                                            0.0s
+ => => transferring dockerfile: 1.44kB                                                                                                                                                                                                                   0.0s 
+ => [back-end internal] load metadata for docker.io/library/ubuntu:latest                                                                                                                                                                                0.9s 
+ => [back-end auth] library/ubuntu:pull token for registry-1.docker.io                                                                                                                                                                                   0.0s 
+ => [back-end internal] load .dockerignore                                                                                                                                                                                                               0.0s
+ => => transferring context: 2B                                                                                                                                                                                                                          0.0s 
+ => [back-end 1/6] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61b78c2678c02cbdae5f0fea92cc6734ab                                                                                                                          0.0s 
+ => => resolve docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61b78c2678c02cbdae5f0fea92cc6734ab                                                                                                                                   0.0s 
+ => [back-end internal] load build context                                                                                                                                                                                                               0.0s 
+ => => transferring context: 28B                                                                                                                                                                                                                         0.0s 
+ => CACHED [back-end 2/6] RUN apt-get update && apt-get upgrade -y     && apt-get install -y python3 python3-pip     && rm -rf /var/lib/apt/lists/*                                                                                                      0.0s 
+ => CACHED [back-end 3/6] RUN rm -f /usr/lib/python*/EXTERNALLY-MANAGED || true                                                                                                                                                                          0.0s 
+ => CACHED [back-end 4/6] RUN pip3 install --no-cache-dir flask flask-cors                                                                                                                                                                               0.0s 
+ => CACHED [back-end 5/6] WORKDIR /app                                                                                                                                                                                                                   0.0s 
+ => CACHED [back-end 6/6] COPY ./api.py /app/api.py                                                                                                                                                                                                      0.0s 
+ => [back-end] exporting to image                                                                                                                                                                                                                        0.1s 
+ => => exporting layers                                                                                                                                                                                                                                  0.0s 
+ => => exporting manifest sha256:adcea323b44244bb2f645988806d3054a97f7c68753e3cdb7c2353994d874dda                                                                                                                                                        0.0s 
+ => => exporting config sha256:82494c2385a0adc6f42f402ac7db8d6214a53ae7562da5666d83c967798d89a5                                                                                                                                                          0.0s 
+ => => exporting attestation manifest sha256:7f8f1cee95cbd48e07e33202fabb0869678b180cb3deb0ed1cdacdedc4c7962e                                                                                                                                            0.0s 
+ => => exporting manifest list sha256:0127dc09aec673203a504e49535d1671ca4228152fb042db13655761a688891d                                                                                                                                                   0.0s 
+ => => naming to docker.io/library/task4-back-end:latest                                                                                                                                                                                                 0.0s 
+ => => unpacking to docker.io/library/task4-back-end:latest                                                                                                                                                                                              0.0s
+ => [back-end] resolving provenance for metadata file                                                                                                                                                                                                    0.0s 
+ => [front-end internal] load build definition from Dockerfile                                                                                                                                                                                           0.0s
+ => => transferring dockerfile: 339B                                                                                                                                                                                                                     0.0s 
+ => [front-end internal] load metadata for docker.io/library/nginx:latest                                                                                                                                                                                0.8s 
+ => [front-end auth] library/nginx:pull token for registry-1.docker.io                                                                                                                                                                                   0.0s 
+ => [front-end internal] load .dockerignore                                                                                                                                                                                                              0.0s 
+ => => transferring context: 2B                                                                                                                                                                                                                          0.0s 
+ => CACHED [front-end 1/3] FROM docker.io/library/nginx:latest@sha256:fb197595ebe76b9c0c14ab68159fd3c08bd067ec62300583543f0ebda353b5be                                                                                                                   0.0s 
+ => => resolve docker.io/library/nginx:latest@sha256:fb197595ebe76b9c0c14ab68159fd3c08bd067ec62300583543f0ebda353b5be                                                                                                                                    0.0s 
+ => [front-end internal] load build context                                                                                                                                                                                                              0.4s 
+ => => transferring context: 43.49kB                                                                                                                                                                                                                     0.4s 
+ => [front-end 2/3] COPY ./softy-pinko-front-end /var/www/html/softy-pinko-front-end                                                                                                                                                                     0.1s 
+ => [front-end 3/3] COPY ./softy-pinko-front-end.conf /etc/nginx/conf.d/default.conf                                                                                                                                                                     0.0s 
+ => [front-end] exporting to image                                                                                                                                                                                                                       0.4s 
+ => => exporting layers                                                                                                                                                                                                                                  0.2s 
+ => => exporting manifest sha256:14029caf0653698c093d1004e07d978fe208c1087887a306dcda9745891e3b03                                                                                                                                                        0.0s 
+ => => exporting config sha256:281e035e36ac54defee495651a9ab2b2fd0f7b0b671fa3e307e56450093c6258                                                                                                                                                          0.0s 
+ => => exporting attestation manifest sha256:30374af1638f5646b9cf31d0509358616b449ecf9d136f6930bc87926f7d63de                                                                                                                                            0.0s 
+ => => exporting manifest list sha256:00799d710e5448745a5d5f90b5f655d3b6eeba771b66b6a9335a57e7bebc2443                                                                                                                                                   0.0s 
+ => => naming to docker.io/library/task4-front-end:latest                                                                                                                                                                                                0.0s 
+ => => unpacking to docker.io/library/task4-front-end:latest                                                                                                                                                                                             0.1s 
+ => [front-end] resolving provenance for metadata file                                                                                                                                                                                                   0.0s 
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2/task4# docker-compose up
+WARN[0000] /mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2/task4/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion 
+[+] Running 3/3
+ ✔ Network task4_default            Created                                                                                                                                                                                                              0.0s 
+ ✔ Container softy-pinko-back-end   Created                                                                                                                                                                                                              0.1s 
+ ✔ Container softy-pinko-front-end  Created                                                                                                                                                                                                              0.1s 
+Attaching to softy-pinko-back-end, softy-pinko-front-end
+softy-pinko-front-end  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+softy-pinko-front-end  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+softy-pinko-front-end  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh                                                                                                                                                
+softy-pinko-front-end  | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf                                                                                                                                        
+softy-pinko-front-end  | 10-listen-on-ipv6-by-default.sh: info: /etc/nginx/conf.d/default.conf differs from the packaged version                                                                                                                              
+softy-pinko-front-end  | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+softy-pinko-front-end  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh                                                                                                                                                    
+softy-pinko-front-end  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh                                                                                                                                                    
+softy-pinko-front-end  | /docker-entrypoint.sh: Configuration complete; ready for start up                                                                                                                                                                    
+softy-pinko-front-end  | 2024/12/17 12:35:15 [notice] 1#1: using the "epoll" event method                                                                                                                                                                     
+softy-pinko-front-end  | 2024/12/17 12:35:15 [notice] 1#1: nginx/1.27.3
+softy-pinko-front-end  | 2024/12/17 12:35:15 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14)                                                                                                                                                             
+softy-pinko-front-end  | 2024/12/17 12:35:15 [notice] 1#1: OS: Linux 5.15.167.4-microsoft-standard-WSL2
+softy-pinko-front-end  | 2024/12/17 12:35:15 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576                                                                                                                                                          
+softy-pinko-front-end  | 2024/12/17 12:35:15 [notice] 1#1: start worker processes                                                                                                                                                                             
+softy-pinko-front-end  | 2024/12/17 12:35:15 [notice] 1#1: start worker process 28                                                                                                                                                                            
+softy-pinko-front-end  | 2024/12/17 12:35:15 [notice] 1#1: start worker process 29                                                                                                                                                                            
+softy-pinko-front-end  | 2024/12/17 12:35:15 [notice] 1#1: start worker process 30                                                                                                                                                                            
+softy-pinko-front-end  | 2024/12/17 12:35:15 [notice] 1#1: start worker process 31                                                                                                                                                                            
+softy-pinko-front-end  | 2024/12/17 12:35:15 [notice] 1#1: start worker process 32                                                                                                                                                                            
+softy-pinko-front-end  | 2024/12/17 12:35:15 [notice] 1#1: start worker process 33                                                                                                                                                                            
+softy-pinko-front-end  | 2024/12/17 12:35:15 [notice] 1#1: start worker process 34                                                                                                                                                                            
+softy-pinko-front-end  | 2024/12/17 12:35:15 [notice] 1#1: start worker process 35                                                                                                                                                                            
+softy-pinko-back-end   |  * Serving Flask app 'api'                                                                                                                                                                                                           
+softy-pinko-back-end   |  * Debug mode: off
+softy-pinko-back-end   | WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.                                                                                                               
+softy-pinko-back-end   |  * Running on all addresses (0.0.0.0)                                                                                                                                                                                                
+softy-pinko-back-end   |  * Running on http://127.0.0.1:5252                                                                                                                                                                                                  
+softy-pinko-back-end   |  * Running on http://172.18.0.2:5252                                                                                                                                                                                                 
+softy-pinko-back-end   | Press CTRL+C to quit                                                                                                                                                                                                                 
+softy-pinko-back-end   | 172.18.0.1 - - [17/Dec/2024 12:36:54] "GET /api/hello HTTP/1.1" 200 -                                                                                                                                                                
+
++-+-+-Task5-+-+-+
+Gracefully stopping... (press Ctrl+C again to force)
+[+] Stopping 2/2
+ ✔ Container softy-pinko-front-end  Stopped                                                                                                                                                                                                              0.4s 
+ ✔ Container softy-pinko-back-end   Stopped                                                                                                                                                                                                             10.4s 
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2/task4#
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2/task4# cd ..
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2# cd task5
+root@UID7E:/mnt/c/Users/steph/Documents/3ème trimestre/holbertonschool-softy-pinko-docker_v2/task5#
+
